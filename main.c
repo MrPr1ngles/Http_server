@@ -2,6 +2,8 @@
 #include "server.h"
 
 int main() {
-    start_server(8080);
+    Server server;
+    server.port = 8080;
+    start_server(&server);
     return 0;
 }
