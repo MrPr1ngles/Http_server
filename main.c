@@ -3,7 +3,8 @@
 
 int main() {
     Server server;
-    server.port = 8080;
+    printf("Введите порт \n");
+    scanf("%d", &server.port);
     start_server(&server);
     return 0;
 }
