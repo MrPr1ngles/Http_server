@@ -47,7 +47,7 @@ void handle_request(int socket) {
     if (file_fd == -1) {
         // Файл не найден
         snprintf(response_header, sizeof(response_header),
-                 "HTTP/1.1 404 Not Found\r\nContent-Length: 21\r\n\r\n 404 not found");
+                 "HTTP/1.1 404 Not Found\r\nContent-Length: 14\r\n\r\n not found");
         write(socket, response_header, strlen(response_header));
         return;
     }
